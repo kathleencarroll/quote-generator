@@ -26,7 +26,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 auto;
-  
+
   font-family: "Josefin Slab", serif;
   color: #ffffff;
   font-size: 28px;
@@ -45,7 +45,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 auto;
-  
+
   font-family: "Josefin Slab", serif;
   color: #ffffff;
   font-size: 18px;
@@ -56,10 +56,10 @@ body {
 
 .button-container {
   text-align: center;
-  
+
   margin: 0 auto;
   padding: 0 auto;
-  
+
   float: right;
   width: 15%;
   min-width: 150px;
@@ -69,10 +69,10 @@ body {
   background-color: #FD6078;
   border: 0;
   border-radius: 12px;
-  
+
   width: 100%;
   height: 30px;
-  
+
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 900;
@@ -89,10 +89,10 @@ body {
 
 .twitter-container {
   text-align: center;
-  
+
   margin: 0 auto;
   padding: 0 auto;
-  
+
   float: left;
   width: 15%;
   min-width: 150px;
@@ -102,10 +102,10 @@ body {
   background-color: #FD6078;
   border: 0;
   border-radius: 50%;
-  
+
   width: 30px;
   height: 30px;
-  
+
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 900;
@@ -116,22 +116,44 @@ body {
   background-color: rgba(253,95,120,.5);
 }
 
-.twitter:active { 
+.twitter:active {
   background-color: #F55D74;
 }
 
 .fadeaway {
+  -webkit-animation: fade 1s;
+  -moz-animation: fade 1s;
+  -o-animation: fade 1s;
   animation: fade 1s;
+
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
   animation-iteration-count: 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 /** ANIMATION **/
+@-webkit-keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 @keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
